@@ -7,6 +7,7 @@ require '../dbconn.php';
 $error="";
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    
+    //this is the admin login page
 
     //admin login
     $sql = $conn->prepare("SELECT * FROM admins WHERE username = ?");
